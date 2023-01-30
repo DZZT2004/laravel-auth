@@ -81,13 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    @php
-                    if (Auth::check()) {
-                        echo 'sei loggato'
-                    }else{
-                        echo 'non sei loggato'
-                    }
-                    @endphp
+                    @if (Auth::check())
+                        sei loggato
+                    @else
+                        non sei loggato
+                    @endif
                 </div>
 
                 <div class="links">
